@@ -51,7 +51,11 @@
 <nav>
 	<ul>
 		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
-		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
+		<li><a class='{segment === "services" ? "selected" : ""}' href='services'>Nos services</a></li>
+		<li><a class='{segment === "equipe" ? "selected" : ""}' href='equipe'>L'équipe</a></li>
+		<li><a class='{segment === "visions" ? "selected" : ""}' href='visions'>Nos Visions</a></li>
+		<li><a class='{segment === "entreprise" ? "selected" : ""}' href='entreprise'>Notre Entreprise</a></li>
+		<li><a class='{segment === "beelys" ? "selected" : ""}' href='beelys'>Beelys et nous</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
