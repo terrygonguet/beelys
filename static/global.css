@@ -54,7 +54,7 @@ main {
   flex-direction: column;
   background-color: white;
   position: absolute;
-  width: 100vw;
+  max-width: 35em;
   padding: 1em;
   height: 100%;
 }
@@ -71,6 +71,6 @@ main {
   }
 
   main {
-    margin: 0 auto;
+    margin: 0 20%;
   }
 }

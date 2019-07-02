@@ -48,19 +48,14 @@
   }
 
   img {
-    width: 1em;
-    margin: 0.5em;
+    width: 1.2em;
+    margin: 0.2em;
   }
 
   @media (min-width: 380px) {
     img {
       width: 1.5em;
-    }
-  }
-
-  @media (min-width: 768px) {
-    nav {
-      display: block;
+      margin: 0.5em;
     }
   }
 </style>
