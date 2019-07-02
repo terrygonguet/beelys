@@ -21,7 +21,7 @@
 <div class:grow={!titleOnly}>
   <h2 on:click>{besoin ? 'Besoins' : 'Solutions'}</h2>
   {#if !titleOnly}
-    <div transition:slide|local>
+    <div transition:slide>
       <p>{title}</p>
       <ul>
         {#each items as item}
