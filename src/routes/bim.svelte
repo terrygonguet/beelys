@@ -1,28 +1,43 @@
+<script>
+  import slide from "../slide";
+  import BesRep from "../components/BesoinReponses.svelte";
+
+  //Page
+  let pageTitle = "L'expert BIM";
+  let pageBesoin = true;
+
+  //Components
+  let title1 = "Expliquer son métier à ses clients";
+  let items1 = [
+    "Transmettre de l'information complexe",
+    "Vendre une prestation sans décevoir",
+    "Obtenir les informations nécessaires auprès de ses clients"
+  ];
+
+  let title2 = "Serious Game";
+  let items2 = [
+    "Ludique, élimination des longues pages explicatives",
+    "Pédagogique, simulation de la prestation par le client",
+    "Transmssion de l'information, compréhension des tenants et aboutissant"
+  ];
+  let punchline2 = "Moins de lecture et plus d'activité!";
+</script>
+
 <svelte:head>
-	<title>L'expert</title>
+  <title>{pageTitle}</title>
 </svelte:head>
 
-<h1>L'expert</h1>
-
-<div>
-  <h2>Besoins</h2>
-  <p>Expliquer son métier à ses clients</p>
-  <ul>
-    <li>Transmettre de l'information complexe</li>
-    <li>Vendre une prestation sans décevoir</li>
-    <li>Obtenir les informations nécessaires auprès de ses clients</li>
-    <li>Acheter petit à petit</li>
-  </ul>
-</div>
-
-
-<div>
-  <h2>Réponses</h2>
-  <p>Serious Game</p>
-  <ul>
-    <li>Ludique, élimination des longues pages explicatives</li>
-    <li>Pédagogique, simulation de la prestation par le client</li>
-    <li>Transmssion de l'information, compréhension des tenants et aboutissant</li>
-  </ul>
-  <p><bold>Moins de lecture et plus d'activité!</bold></p>
-</div>
+<main out:slide in:slide={{ fromRight: false }}>
+  <h1>{pageTitle}</h1>
+  {#if pageBesoin}
+    <BesRep title={title1} items={items1} />
+    <button on:click={e => (pageBesoin = false)}>Solutions</button>
+  {:else}
+    <BesRep
+      besoin={false}
+      title={title2}
+      items={items2}
+      punchline={punchline2} />
+    <button on:click={e => (pageBesoin = true)}>Besoins</button>
+  {/if}
+</main>

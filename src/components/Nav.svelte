@@ -100,5 +100,8 @@
          {isSmall ? '' : 'Nous'}
       </a>
     </li>
+    <li>
+      <a class:selected={segment === 'vision'} href="vision">Notre vision</a>
+    </li>
   </ul>
 </nav>
