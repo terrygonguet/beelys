@@ -8,16 +8,16 @@
 </script>
 
 <style>
-div div {
-  /* prevent margin collapse */
-  padding-bottom: 1px;
-}
+  div div {
+    /* prevent margin collapse */
+    padding-bottom: 1px;
+  }
 </style>
 
 <div>
   <h2 on:click>{besoin ? 'Besoins' : 'Solutions'}</h2>
   {#if !titleOnly}
-    <div transition:shrink|local>
+    <div transition:shrink>
       <p>{title}</p>
       <ul>
         {#each items as item}
@@ -26,7 +26,7 @@ div div {
       </ul>
       {#if punchline}
         <p>
-          <bold>{punchline}</bold>
+          <strong>{punchline}</strong>
         </p>
       {/if}
     </div>
