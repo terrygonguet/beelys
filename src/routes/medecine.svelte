@@ -1,37 +1,45 @@
 <script>
   import slide from "../slide";
+  import BesRep from "../components/BesoinReponses.svelte";
+
+  //Page
+  let pageTitle = "L'étudiant en médecine";
+  let pageBesoin = true;
+
+  //Components
+  let title1 = "Booster sa productivité";
+  let items1 = [
+    "Pas plus, pas moins, juste ce qu'il faut",
+    "Avoir un avis qui compte",
+    "Ne pas attendre",
+    "Acheter petit à petit"
+  ];
+
+  let title2 = "Application Web et méthode agile";
+  let items2 = [
+    "Application sur-mesure",
+    "L'implication dans le projet : Scrum",
+    "Fonctionnalité noyau en priorité et mise à disposition",
+    "Fonctionnalités vendues à la fin d'un Sprint"
+  ];
+  let punchline2 = "Moins de surprise pour plus de qualité!";
 </script>
 
 <svelte:head>
-  <title>Le travailleur</title>
+  <title>{pageTitle}</title>
 </svelte:head>
 
 <main out:slide in:slide={{ fromRight: false }}>
-  <h1>Le travailleur</h1>
-
-  <div>
-    <h2>Besoins</h2>
-    <p>Booster sa productivité</p>
-    <ul>
-      <li>Pas plus, pas moins, juste ce qu'il faut</li>
-      <li>Avoir un avis qui compte</li>
-      <li>Ne pas attendre</li>
-      <li>Acheter petit à petit</li>
-    </ul>
-  </div>
-
-  <div>
-    <h2>Réponses</h2>
-    <p>Application Web et méthode agile</p>
-    <ul>
-      <li>Application sur-mesure</li>
-      <li>L'implication dans le projet : Scrum</li>
-      <li>Fonctionnalité noyau en priorité et mise à disposition</li>
-      <li>De l'UX et Google aime ça</li>
-      <li>Fonctionnalités vendues à la fin d'un Sprint</li>
-    </ul>
-    <p>
-      <bold>Moins de surprise pour plus de qualité!</bold>
-    </p>
-  </div>
+  <h1>{pageTitle}</h1>
+  {#if pageBesoin}
+    <BesRep title={title1} items={items1} />
+    <button on:click={e => (pageBesoin = false)}>Solutions</button>
+  {:else}
+    <BesRep
+      besoin={false}
+      title={title2}
+      items={items2}
+      punchline={punchline2} />
+    <button on:click={e => (pageBesoin = true)}>Besoins</button>
+  {/if}
 </main>
