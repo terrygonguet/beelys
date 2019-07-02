@@ -10,12 +10,15 @@
   align-self: center;
 }
 </style>
+<script>
+  import slide from "../slide";
+</script>
 
 <svelte:head>
-	<title>Le restaurant</title>
+  <title>Le restaurant</title>
 </svelte:head>
 
-<div class="content">
+<main out:slide in:slide={{ fromRight: false }}>
   <h1>Le Restaurant</h1>
   <div class="needs">
     <h2>Besoins</h2>
@@ -39,6 +42,8 @@
       <li>Conçu pour smartphone et ordinateur</li>
       <li>De l'UX et Google aime ça</li>
     </ul>
-    <p><bold>Moins cher pour plus d'efficacité!</bold></p>
+    <p>
+      <bold>Moins cher pour plus d'efficacité!</bold>
+    </p>
   </div>
-</div>
+</main>
