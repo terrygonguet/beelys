@@ -13,7 +13,7 @@
   <p>Un cadre pédagogique et sécurisé pour créer notre société</p>
   <ul>
     <li>Création des statuts</li>
-    <li>Création d’un/ des modèles de facturation</li>
+    <li>Création des modèles de facturation</li>
     <li>Administration d’une entreprise, notamment la SCOP et SARL</li>
   </ul>
 

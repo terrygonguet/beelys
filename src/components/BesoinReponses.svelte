@@ -28,15 +28,19 @@
   h2 img {
     width: 0.8em;
   }
+
+  .hidden {
+    display: none;
+  }
 </style>
 
 <div class:grow={!titleOnly}>
   <h2 on:click>
      {besoin ? 'Besoins' : 'Solutions'}
-    <img src="add.svg" alt="add" />
+    <img class:hidden={!titleOnly} src="add.svg" alt="add" />
   </h2>
   {#if !titleOnly}
-    <div transition:slide>
+    <div transition:slide|local>
       <p>{title}</p>
       <ul>
         {#each items as item}

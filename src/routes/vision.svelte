@@ -29,13 +29,13 @@
     <dt>Humain</dt>
     <dd>Implication du client</dd>
     <dd>Développeurs = collaborateurs</dd>
-    <dd>relation professionnelle et transparente</dd>
+    <dd>Relation professionnelle et transparente</dd>
 
     <dt>Environnemental</dt>
-    <dd>Réduire l’empreinte énergétique</dd>
-    <dd>Faible consommation des batteries</dd>
-    <dd>Plus rapide à charger</dd>
-    <dd>Moins de place sur l'hébergement</dd>
+    <dd>Réduire l’empreinte écologique</dd>
+    <dd>Faible consommation d'énergie</dd>
+    <dd>Chargement plus rapide</dd>
+    <dd>Moins d'espace occupé sur l'hébergement</dd>
 
     <dt>Produit</dt>
     <dd>Grande qualité</dd>
@@ -44,11 +44,17 @@
   <p>
     Devenir un
     <strong>acteur innovant</strong>
-    du tissus entrepreneurial
+    du tissu entrepreneurial
     <strong>local</strong>
     avec une approche
-    <strong>environnemental</strong>
+    <strong>écologique</strong>
     et
-    <strong>vidéoludique</strong>
+    <strong>(vidéo)ludique</strong>
+  </p>
+  <br/>
+  <p>
+      <strong>Faire des sites web autrement</strong> 
+      que les acteurs habituels en empruntant une démarche 
+      <strong>agile</strong> et <strong>orientée client</strong>.
   </p>
 </main>

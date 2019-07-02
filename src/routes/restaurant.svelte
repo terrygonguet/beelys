@@ -7,11 +7,11 @@
   let pageBesoin = true;
 
   //Components
-  let title1 = "Besoin de visibilité sur internet";
+  let title1 = "Besoin de visibilité sur Internet";
   let items1 = [
     "Afficher le menu",
     "Chargement rapide sur le Smartphone",
-    "Contact facile",
+    "Facilité de contact",
     "Référencement des moteurs de recherche"
   ];
 
@@ -19,10 +19,10 @@
   let items2 = [
     "Site interne léger",
     "Optimisé pour la batterie",
-    "Conçu pour smartphone et ordinateur",
+    "Responsive",
     "De l'UX et Google aime ça"
   ];
-  let punchline2 = "Moins cher pour plus d'efficacité!";
+  let punchline2 = "Moins cher et plus efficace !";
 </script>
 
 <svelte:head>
