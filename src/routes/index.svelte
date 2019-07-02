@@ -19,7 +19,7 @@
   let job12 = "Webmarketing";
   let job22 = "Product Owner";
 
-  let name3 = "<a href='https://terry.gonguet.com'>Terry</a>";
+  let name3 = "<a href='https://terry.gonguet.com' target='blank'>Terry</a>";
   let job13 = "Back-end";
   let job23 = "Dev team";
 </script>
