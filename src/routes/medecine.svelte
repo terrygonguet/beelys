@@ -3,7 +3,7 @@
   import BesRep from "../components/BesoinReponses.svelte";
 
   //Page
-  let pageTitle = "L'étudiant en médecine";
+  let pageTitle = "L'étudiante en médecine";
   let pageBesoin = true;
 
   //Components

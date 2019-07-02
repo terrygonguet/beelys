@@ -10,14 +10,14 @@
   let title1 = "Besoin de visibilité sur Internet";
   let items1 = [
     "Afficher le menu",
-    "Chargement rapide sur le Smartphone",
+    "Chargement rapide sur les smartphones",
     "Facilité de contact",
     "Référencement des moteurs de recherche"
   ];
 
   let title2 = "Catalogue de sites web";
   let items2 = [
-    "Site interne léger",
+    "Site internet léger",
     "Optimisé pour la batterie",
     "Responsive",
     "De l'UX et Google aime ça"

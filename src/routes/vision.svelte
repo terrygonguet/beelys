@@ -29,7 +29,7 @@
     <dt>Humain</dt>
     <dd>Implication du client</dd>
     <dd>Développeurs = collaborateurs</dd>
-    <dd>Relation professionnelle et transparente</dd>
+    <dd>Relations professionnelles et transparentes</dd>
 
     <dt>Environnemental</dt>
     <dd>Réduire l’empreinte écologique</dd>
@@ -41,6 +41,7 @@
     <dd>Grande qualité</dd>
     <dd>Optimisé</dd>
   </dl>
+
   <p>
     Devenir un
     <strong>acteur innovant</strong>
@@ -51,10 +52,5 @@
     et
     <strong>(vidéo)ludique</strong>
   </p>
-  <br/>
-  <p>
-      <strong>Faire des sites web autrement</strong> 
-      que les acteurs habituels en empruntant une démarche 
-      <strong>agile</strong> et <strong>orientée client</strong>.
-  </p>
+  <br />
 </main>

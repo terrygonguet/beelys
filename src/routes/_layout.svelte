@@ -7,6 +7,7 @@
 <style>
   div {
     position: relative;
+    background: #ece4dc;
   }
 </style>
 
