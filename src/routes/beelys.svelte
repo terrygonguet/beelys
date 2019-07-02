@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Beelys et nous</title>
+	<title>L'équipe</title>
 </svelte:head>
 
-<h1>Beelys et nous</h1>
+<h1>Beelys</h1>
