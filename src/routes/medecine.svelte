@@ -10,9 +10,9 @@
   let title1 = "Booster sa productivité";
   let items1 = [
     "Pas plus, pas moins, juste ce qu'il faut",
-    "Avoir un avis qui compte",
-    "Ne pas attendre",
-    "Acheter petit à petit"
+    "Participer activement au développement",
+    "Pas d'attente",
+    "Achat au fur et à mesure de l'avancée"
   ];
 
   let title2 = "Application Web et méthode agile";
@@ -22,7 +22,7 @@
     "Fonctionnalité noyau en priorité et mise à disposition",
     "Fonctionnalités vendues à la fin d'un Sprint"
   ];
-  let punchline2 = "Moins de surprise pour plus de qualité!";
+  let punchline2 = "Une meilleure qualité et plus de surprises !";
 </script>
 
 <svelte:head>

@@ -10,7 +10,7 @@
   let title1 = "Expliquer son métier à ses clients";
   let items1 = [
     "Transmettre de l'information complexe",
-    "Vendre une prestation sans décevoir",
+    "Vendre une prestation dont la qualité est garantie",
     "Obtenir les informations nécessaires auprès de ses clients"
   ];
 
@@ -18,9 +18,9 @@
   let items2 = [
     "Ludique, élimination des longues pages explicatives",
     "Pédagogique, simulation de la prestation par le client",
-    "Transmssion de l'information, compréhension des tenants et aboutissant"
+    "Transmssion de l'information, compréhension des tenants et aboutissants"
   ];
-  let punchline2 = "Moins de lecture et plus d'activité!";
+  let punchline2 = "Moins de lecture et plus d'interactivité !";
 </script>
 
 <svelte:head>
