@@ -49,39 +49,18 @@
 </style>
 
 <nav>
-  <ul>
-    <li>
-      <a class:selected={segment === undefined} href=".">home</a>
-    </li>
-    <li>
-      <a class:selected={segment === 'services'} href="services">
-        Nos services
-      </a>
-    </li>
-    <li>
-      <a class:selected={segment === 'equipe'} href="equipe">L'équipe</a>
-    </li>
-    <li>
-      <a class:selected={segment === 'visions'} href="visions">Nos Visions</a>
-    </li>
-    <li>
-      <a class:selected={segment === 'entreprise'} href="entreprise">
-        Notre Entreprise
-      </a>
-    </li>
-    <li>
-      <a class:selected={segment === 'beelys'} href="beelys">Beelys et nous</a>
-    </li>
+	<ul>
+		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
+		<li><a class='{segment === "restaurant" ? "selected" : ""}' href='restaurant'>Le restaurant</a></li>
+		<li><a class='{segment === "medecine" ? "selected" : ""}' href='medecine'>L'étudiant de médecine</a></li>
+		<li><a class='{segment === "bim" ? "selected" : ""}' href='bim'>Le BIM</a></li>
+		<li><a class='{segment === "beelys" ? "selected" : ""}' href='beelys'>Vous</a></li>
+		<li><a class='{segment === "equipe" ? "selected" : ""}' href='equipe'>Nous</a></li>
+		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+		     the blog data when we hover over the link or tap it on a touchscreen 
+				 
+				 		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
+				 -->
 
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <li>
-      <a
-        rel="prefetch"
-        class={segment === 'blog' ? 'selected' : ''}
-        href="blog">
-        blog
-      </a>
-    </li>
-  </ul>
+	</ul>
 </nav>
