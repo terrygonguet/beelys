@@ -1,5 +1,7 @@
 <script>
   import slide from "../slide";
+</script>
+
 <svelte:head>
   <title>{pageTitle}</title>
 </svelte:head>
