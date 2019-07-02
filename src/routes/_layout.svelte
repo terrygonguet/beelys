@@ -4,6 +4,14 @@
   export let segment;
 </script>
 
+<style>
+  div {
+    position: relative;
+  }
+</style>
+
 <Nav {segment} />
 
-<slot />
+<div>
+  <slot />
+</div>

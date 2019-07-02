@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -44,17 +52,17 @@ code {
 main {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   background-color: white;
-  padding: 2em;
-  box-sizing: border-box;
-  width: 100vw;
+  position: absolute;
+  max-width: 35em;
+  padding: 1em;
+  height: 100%;
 }
 
 #sapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   min-height: 100vh;
+  grid-template-rows: auto 1fr;
 }
 
 @media (min-width: 400px) {
@@ -63,6 +71,6 @@ main {
   }
 
   main {
-    padding: 2em 20%;
+    margin: 0 20%;
   }
 }
