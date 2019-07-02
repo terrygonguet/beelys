@@ -6,6 +6,17 @@
   let pageTitle = "Notre vision";
 </script>
 
+<style>
+  dt {
+    font-weight: bold;
+    margin: 5px 0px 5px 0px;
+    border-bottom: orange solid 2px;
+  }
+  dd {
+    margin-inline-start: 10px;
+  }
+</style>
+
 <svelte:head>
   <title>{pageTitle}</title>
 </svelte:head>
@@ -16,7 +27,7 @@
 
   <dl>
     <dt>Humain</dt>
-    <dd>Implication du client.</dd>
+    <dd>Implication du client</dd>
     <dd>Développeurs = collaborateurs</dd>
     <dd>relation professionnelle et transparente</dd>
 

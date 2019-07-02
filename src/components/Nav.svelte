@@ -11,7 +11,7 @@
 
 <style>
   nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
+    /* border-bottom: 1px solid rgba(255, 62, 0, 0.1); */
     font-weight: 300;
     background-color: #db7c26;
   }
@@ -26,9 +26,10 @@
 
   .selected {
     position: relative;
+    background-color: #da914f;
   }
 
-  .selected::after {
+  /* .selected::before {
     position: absolute;
     content: "";
     width: calc(100% - 1em);
@@ -36,7 +37,7 @@
     background-color: #fff689;
     display: block;
     bottom: -1px;
-  }
+  } */
 
   a {
     text-decoration: none;
