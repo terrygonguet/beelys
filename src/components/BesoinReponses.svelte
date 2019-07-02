@@ -1,21 +1,34 @@
 <script>
+  import shrink from "../shrink";
   export let besoin = true;
   export let title = "Untitled";
   export let items = [];
   export let punchline;
+  export let titleOnly = false;
 </script>
 
+<style>
+div div {
+  /* prevent margin collapse */
+  padding-bottom: 1px;
+}
+</style>
+
 <div>
-  <h2>{besoin ? 'Besoins' : 'Solutions'}</h2>
-  <p>{title}</p>
-  <ul>
-    {#each items as item}
-      <li>{item}</li>
-    {/each}
-  </ul>
-  {#if punchline}
-    <p>
-      <bold>{punchline}</bold>
-    </p>
+  <h2 on:click>{besoin ? 'Besoins' : 'Solutions'}</h2>
+  {#if !titleOnly}
+    <div transition:shrink|local>
+      <p>{title}</p>
+      <ul>
+        {#each items as item}
+          <li>{item}</li>
+        {/each}
+      </ul>
+      {#if punchline}
+        <p>
+          <bold>{punchline}</bold>
+        </p>
+      {/if}
+    </div>
   {/if}
 </div>
