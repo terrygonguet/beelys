@@ -1,5 +1,6 @@
 <script>
   import slide from "../slide";
+  let pageTitle = "Beelys";
 </script>
 
 <svelte:head>
