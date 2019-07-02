@@ -65,9 +65,9 @@
 <nav>
   <ul>
     <li>
-      <a class:selected={segment === undefined} href=".">
-        <img src="home-alt2.svg" alt="Home" />
-         {isSmall ? '' : 'Home'}
+      <a class:selected={!segment} href=".">
+        <img src="happy-face.svg" alt="Nous" />
+         {isSmall ? '' : 'Nous'}
       </a>
     </li>
     <li>
@@ -95,13 +95,10 @@
       </a>
     </li>
     <li>
-      <a class:selected={segment === 'equipe'} href="equipe">
-        <img src="happy-face.svg" alt="Nous" />
-         {isSmall ? '' : 'Nous'}
+      <a class:selected={segment === 'vision'} href="vision">
+        <img src="lightbulb.svg" alt="Notre vision" />
+         {isSmall ? '' : 'Notre vision'}
       </a>
-    </li>
-    <li>
-      <a class:selected={segment === 'vision'} href="vision">Notre vision</a>
     </li>
   </ul>
 </nav>

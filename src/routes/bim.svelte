@@ -29,15 +29,16 @@
 
 <main out:slide in:slide={{ fromRight: false }}>
   <h1>{pageTitle}</h1>
-  {#if pageBesoin}
-    <BesRep title={title1} items={items1} />
-    <button on:click={e => (pageBesoin = false)}>Solutions</button>
-  {:else}
-    <BesRep
-      besoin={false}
-      title={title2}
-      items={items2}
-      punchline={punchline2} />
-    <button on:click={e => (pageBesoin = true)}>Besoins</button>
-  {/if}
+  <BesRep
+    title={title1}
+    items={items1}
+    titleOnly={!pageBesoin}
+    on:click={e => (pageBesoin = !pageBesoin)} />
+  <BesRep
+    besoin={false}
+    title={title2}
+    items={items2}
+    punchline={punchline2}
+    titleOnly={pageBesoin}
+    on:click={e => (pageBesoin = !pageBesoin)} />
 </main>

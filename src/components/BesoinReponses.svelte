@@ -8,13 +8,17 @@
 </script>
 
 <style>
-div div {
-  /* prevent margin collapse */
-  padding-bottom: 1px;
-}
+  div div {
+    /* prevent margin collapse */
+    padding-bottom: 1px;
+  }
+
+  .grow {
+    flex-grow: 1;
+  }
 </style>
 
-<div>
+<div class:grow={!titleOnly}>
   <h2 on:click>{besoin ? 'Besoins' : 'Solutions'}</h2>
   {#if !titleOnly}
     <div transition:slide|local>
@@ -26,7 +30,7 @@ div div {
       </ul>
       {#if punchline}
         <p>
-          <bold>{punchline}</bold>
+          <strong>{punchline}</strong>
         </p>
       {/if}
     </div>

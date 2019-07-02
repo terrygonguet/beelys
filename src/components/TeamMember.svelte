@@ -5,7 +5,9 @@
 </script>
 
 <div>
-  <h2>{name}</h2>
+  <h2>
+    {@html name}
+  </h2>
   <ul>
     <li>{job1}</li>
     <li>{job2}</li>
