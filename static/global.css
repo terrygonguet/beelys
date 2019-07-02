@@ -44,17 +44,15 @@ code {
 main {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   background-color: white;
   padding: 2em;
-  box-sizing: border-box;
-  width: 100vw;
+  position: absolute;
 }
 
 #sapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   min-height: 100vh;
+  grid-template-rows: auto 1fr;
 }
 
 @media (min-width: 400px) {

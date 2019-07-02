@@ -1,38 +1,30 @@
 <script>
+  import { onMount } from "svelte";
   export let segment;
 
   let isSmall = true;
+  function resize() {
+    isSmall = window.innerWidth < 768;
+  }
+  onMount(resize);
 </script>
 
 <style>
   nav {
     border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     font-weight: 300;
-    padding: 0 1em;
-    display: flex;
-    justify-content: space-evenly;
   }
 
   ul {
     margin: 0;
     padding: 0;
-  }
-
-  /* clearfix */
-  ul::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  li {
-    display: block;
-    float: left;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .selected {
     position: relative;
-    display: inline-block;
   }
 
   .selected::after {
@@ -49,10 +41,13 @@
     text-decoration: none;
     padding: 0.5em;
     display: block;
+    display: flex;
+    align-items: center;
   }
 
   img {
     width: 1.5em;
+    margin: 0.5em;
   }
 
   @media (min-width: 768px) {
@@ -61,6 +56,8 @@
     }
   }
 </style>
+
+<svelte:window on:resize={resize} />
 
 <nav>
   <ul>
