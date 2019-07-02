@@ -46,8 +46,14 @@
   }
 
   img {
-    width: 1.5em;
+    width: 1em;
     margin: 0.5em;
+  }
+
+  @media (min-width: 380px) {
+    img {
+      width: 1.5em;
+    }
   }
 
   @media (min-width: 768px) {
