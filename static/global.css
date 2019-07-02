@@ -50,7 +50,7 @@ main {
   flex-direction: column;
   background-color: white;
   position: absolute;
-  width: 100vw;
+  max-width: 35em;
   padding: 1em;
   height: 100%;
 }
