@@ -1,17 +1,14 @@
-<style>
-.needs{
-}
-
-.divider{
-  width: 250px;
-  height: 250px;
-  background: orange;
-  border-radius: 50%;
-  align-self: center;
-}
-</style>
 <script>
   import slide from "../slide";
+  import BesRep from "../components/BesoinReponses.svelte";
+
+  let title1 = "Besoin de visibilité sur internet";
+  let items1 = [
+    "Afficher le menu",
+    "Chargement rapide sur le Smartphone",
+    "Contact facile",
+    "Référencement des moteurs de recherche"
+  ];
 </script>
 
 <svelte:head>
@@ -20,18 +17,8 @@
 
 <main out:slide in:slide={{ fromRight: false }}>
   <h1>Le Restaurant</h1>
-  <div class="needs">
-    <h2>Besoins</h2>
-    <p>Besoin de visibilité sur internet</p>
-    <ul>
-      <li>Afficher le menu</li>
-      <li>Chargement rapide sur le Smartphone</li>
-      <li>Contact facile</li>
-      <li>Référencement des moteurs de recherche</li>
-    </ul>
-  </div>
-
-  <div class="divider"></div>
+  <BesRep title={title1} items={items1} />
+  <BesRep title={title2} items={items2} />
 
   <div>
     <h2>Réponses</h2>
