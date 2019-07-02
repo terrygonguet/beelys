@@ -1,6 +1,11 @@
 <script>
   import slide from "../slide";
   import TM from "../components/TeamMember.svelte";
+  import { goto } from "@sapper/app";
+
+  function swipe(e) {
+    if (e.detail == "left") goto("restaurant");
+  }
 
   //Page
   let pageTitle = "L'équipe";
@@ -22,6 +27,8 @@
 <svelte:head>
   <title>{pageTitle}</title>
 </svelte:head>
+
+<svelte:window on:swipe={swipe} />
 
 <main out:slide in:slide={{ fromRight: false }}>
 

@@ -1,6 +1,15 @@
 <script>
   import slide from "../slide";
   import BesRep from "../components/BesoinReponses.svelte";
+  import { goto } from "@sapper/app";
+
+  function swipe(e) {
+    if (e.detail == "right") {
+      fromRight = true;
+      goto(".");
+    } else goto("medecine");
+  }
+  let fromRight = false;
 
   //Page
   let pageTitle = "Le Restaurant";
@@ -29,7 +38,9 @@
   <title>{pageTitle}</title>
 </svelte:head>
 
-<main out:slide in:slide={{ fromRight: false }}>
+<svelte:window on:swipe={swipe} />
+
+<main out:slide={{ fromRight: !fromRight }} in:slide={{ fromRight }}>
   <h1>{pageTitle}</h1>
   <BesRep
     title={title1}

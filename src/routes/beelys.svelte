@@ -1,5 +1,15 @@
 <script>
   import slide from "../slide";
+  import { goto } from "@sapper/app";
+
+  function swipe(e) {
+    if (e.detail == "right") {
+      fromRight = true;
+      goto("bim");
+    } else goto("vision");
+  }
+  let fromRight = false;
+
   let pageTitle = "Beelys";
 </script>
 
@@ -7,7 +17,9 @@
   <title>{pageTitle}</title>
 </svelte:head>
 
-<main out:slide in:slide={{ fromRight: false }}>
+<svelte:window on:swipe={swipe} />
+
+<main out:slide={{ fromRight: !fromRight }} in:slide={{ fromRight }}>
   <h1>{pageTitle}</h1>
 
   <p>Un cadre pédagogique et sécurisé pour créer notre société</p>
