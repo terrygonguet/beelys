@@ -1,5 +1,5 @@
 <script>
-  import shrink from "../shrink";
+  import { slide } from "svelte/transition";
   export let besoin = true;
   export let title = "Untitled";
   export let items = [];
@@ -17,7 +17,7 @@ div div {
 <div>
   <h2 on:click>{besoin ? 'Besoins' : 'Solutions'}</h2>
   {#if !titleOnly}
-    <div transition:shrink|local>
+    <div transition:slide|local>
       <p>{title}</p>
       <ul>
         {#each items as item}
