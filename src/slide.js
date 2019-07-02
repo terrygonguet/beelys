@@ -7,7 +7,7 @@ export default function (node, { delay = 0, duration = 400, easing = cubicOut, f
         delay,
         duration,
         easing,
-        css: t => `postion: absolute;
-        transform: ${transform} translate(${(100 - 100 * t) * (fromRight ? -1 : 1)}%, 0%);`
+        css: t => `postion: absolute;` +
+        `transform: ${transform} translate(${(100 - 100 * t) * (fromRight ? -1 : 1)}%, 0%);`
     };
 }
