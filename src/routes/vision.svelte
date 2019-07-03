@@ -2,9 +2,13 @@
   import slide from "../slide";
   import BesRep from "../components/BesoinReponses.svelte";
   import { goto } from "@sapper/app";
+  import { fromRight } from "../stores";
 
   function swipe(e) {
-    if (e.detail == "right") goto("beelys");
+    if (e.detail == "right") {
+      $fromRight = true;
+      goto("beelys");
+    }
   }
 
   //Page
@@ -28,7 +32,9 @@
 
 <svelte:window on:swipe={swipe} />
 
-<main out:slide={{ fromRight: false }} in:slide={{ fromRight: false }}>
+<main
+  out:slide={{ fromRight: !$fromRight }}
+  in:slide={{ fromRight: $fromRight }}>
   <h1>{pageTitle}</h1>
   <p>Nos compétences pour vos projets</p>
 

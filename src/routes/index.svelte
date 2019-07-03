@@ -2,9 +2,13 @@
   import slide from "../slide";
   import TM from "../components/TeamMember.svelte";
   import { goto } from "@sapper/app";
+  import { fromRight } from "../stores";
 
   function swipe(e) {
-    if (e.detail == "left") goto("restaurant");
+    if (e.detail == "left") {
+      $fromRight = false;
+      goto("restaurant");
+    }
   }
 
   //Page
@@ -30,7 +34,9 @@
 
 <svelte:window on:swipe={swipe} />
 
-<main out:slide in:slide={{ fromRight: false }}>
+<main
+  out:slide={{ fromRight: !$fromRight }}
+  in:slide={{ fromRight: $fromRight }}>
 
   <h1>{pageTitle}</h1>
   <TM name={name1} job1={job11} job2={job21} />

@@ -1,14 +1,17 @@
 <script>
   import slide from "../slide";
   import { goto } from "@sapper/app";
+  import { fromRight } from "../stores";
 
   function swipe(e) {
     if (e.detail == "right") {
-      fromRight = true;
+      $fromRight = true;
       goto("bim");
-    } else goto("vision");
+    } else {
+      $fromRight = false;
+      goto("vision");
+    }
   }
-  let fromRight = false;
 
   let pageTitle = "Beelys";
 </script>
@@ -19,7 +22,9 @@
 
 <svelte:window on:swipe={swipe} />
 
-<main out:slide={{ fromRight: !fromRight }} in:slide={{ fromRight }}>
+<main
+  out:slide={{ fromRight: !$fromRight }}
+  in:slide={{ fromRight: $fromRight }}>
   <h1>{pageTitle}</h1>
 
   <p>Un cadre pédagogique et sécurisé pour créer notre société</p>
