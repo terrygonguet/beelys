@@ -15,6 +15,7 @@
 
   .grow {
     flex-grow: 1;
+    background: white;
   }
 
   h2 {
@@ -40,7 +41,7 @@
     <img class:hidden={!titleOnly} src="add.svg" alt="add" />
   </h2>
   {#if !titleOnly}
-    <div transition:slide|local>
+    <div transition:slide>
       <p>{title}</p>
       <ul>
         {#each items as item}
